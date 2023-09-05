@@ -4,10 +4,23 @@
   "extensions": [
     "ms-python.python",
     "Github.copilot",
-    "Github.copilot-chat"
+    "Github.copilot-chat",
+    "GitHub.vscode-pull-request-github",
+    "GitHub.vscode-issues"
   ],
   "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "issues.showInExplorer": true,
+    "githubPullRequests.queries": [
+      {
+        "label": "Your open PRs",
+        "query": "is:open is:pr author:@me"
+      },
+      {
+        "label": "Your recently merged PRs",
+        "query": "is:merged is:pr author:@me"
+      }
+    ]
   },
   "forwardPorts": [
     3000
