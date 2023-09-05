@@ -2,7 +2,9 @@
   "name": "Python",
   "image": "python:3.9",
   "extensions": [
-    "ms-python.python"
+    "ms-python.python",
+    "Github.copilot",
+    "Github.copilot-chat"
   ],
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
